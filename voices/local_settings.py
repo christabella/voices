@@ -5,6 +5,17 @@ DEBUG = True
 SECRET_KEY = "youshallneverfindout"
 NEVERCACHE_KEY = "{{ nevercache_key }}"
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'voices',
+        'USER': 'bella',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+
 # DATABASES = {
 #     "default": {
 #         # Ends with "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
