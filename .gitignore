@@ -4,5 +4,6 @@ syntax: glob
 *.db
 .DS_Store
 local_settings.py
+voices/local_settings.py
 
 *.pid

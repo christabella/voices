@@ -9,17 +9,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'voices',
-<<<<<<< HEAD
-        'USER': 'super',
-        'PASSWORD': 'hell0kenn0',
-        'HOST': 'theseabilities-65.postgres.pythonanywhere-services.com',
-        'PORT': '10065',
-=======
         'USER': 'bella',
         'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '',
->>>>>>> e0e97115846ab26e3371affce4fafcb02c59c812
     }
 }
 
