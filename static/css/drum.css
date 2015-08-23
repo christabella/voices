@@ -5,13 +5,15 @@
 .navbar a.btn {padding:3px 10px !important; margin:7px 3px;}
 .navbar-search .btn {display:none;}
 a.brand {
-    background:url('../img/drum-logo.png') no-repeat; background-position:5px 6px;
     text-indent:13px; margin-left:-3px !important;
     font-family: 'Smoothy-Cursive', cursive;
     font-size:24px !important;
     padding:14px 20px !important;
     text-decoration:none;
     color:#fff !important;
+}
+a.logo{
+    background:url('../img/drum-logo.png') no-repeat; background-position:5px 6px;    
 }
 @media (max-width: 600px) {
     a.brand {text-indent:40px; padding:0 !important; width:30px; overflow:hidden;

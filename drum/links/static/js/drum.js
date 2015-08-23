@@ -1,12 +1,12 @@
-$(document).ready(function() {
-         $('#choiceModal').modal('show');
- });
 // $(document).ready(function() {
-//      if ($.cookie('first-time') == null) {
 //          $('#choiceModal').modal('show');
-//          $.cookie('first-time', '1');
-//      }
 //  });
+$(document).ready(function() {
+     if ($.cookie('first-time') == null) {
+         $('#choiceModal').modal('show');
+         $.cookie('first-time', '1');
+     }
+ });
 
 var contents = function(html, tag) {
     if (html.indexOf('<' + tag + '>') >= 0) {
