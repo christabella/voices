@@ -5,6 +5,7 @@
 .navbar a.btn {padding:3px 10px !important; margin:7px 3px;}
 .navbar-search .btn {display:none;}
 a.brand {
+    background:url('../img/drum-logo.png') no-repeat; background-position:5px 6px;
     text-indent:13px; margin-left:-3px !important;
     font-family: 'Smoothy-Cursive', cursive;
     font-size:24px !important;
@@ -12,11 +13,8 @@ a.brand {
     text-decoration:none;
     color:#fff !important;
 }
-a.logo{
-    background:url('../img/drum-logo.png') no-repeat; background-position:5px 6px;    
-}
 @media (max-width: 600px) {
-    a.brand {text-indent:40px; padding:0 !important; width:30px; overflow:hidden;
+    a.brand {text-indent:25px; padding:12px 0px 0px 17px !important; width:30px; overflow:visible; display:grid !important;
 }}
 
 /* Misc */
