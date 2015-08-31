@@ -5,6 +5,8 @@ $(document).ready(function() {
      if ($.cookie('first-time') == null) {
          $('#choiceModal').modal('show');
          $.cookie('first-time', '1');
+     } else {
+        $('div').remove("#choiceModal");
      }
  });
 
