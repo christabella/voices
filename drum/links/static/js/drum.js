@@ -1,14 +1,17 @@
 // $(document).ready(function() {
 //          $('#choiceModal').modal('show');
 //  });
+// $(document).ready(function() {
+//      if ($.cookie('first-time') == null) {
+//          $('#choiceModal').modal('show');
+//          $.cookie('first-time', '1');
+//      } else {
+//         $('div').remove("#choiceModal");
+//      }
+//  });
 $(document).ready(function() {
-     if ($.cookie('first-time') == null) {
-         $('#choiceModal').modal('show');
-         $.cookie('first-time', '1');
-     } else {
-        $('div').remove("#choiceModal");
-     }
- });
+    $('div').remove("#choiceModal");
+});
 
 var contents = function(html, tag) {
     if (html.indexOf('<' + tag + '>') >= 0) {
