@@ -14,7 +14,7 @@ except ImportError:
 
 from django.conf import settings
 from django.core.urlresolvers import reverse
-from django.db import models
+from django.db import models #normal django stuff
 from django.db.models import Q
 from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
@@ -67,7 +67,7 @@ class Link(Displayable, Ownable):
 class Profile(models.Model):
 
     user = models.OneToOneField(USER_MODEL)
-    website = models.URLField(blank=True)
+    # website = models.URLField(blank=True)
     bio = models.TextField(blank=True)
     karma = models.IntegerField(default=0, editable=False)
 

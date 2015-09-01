@@ -15,9 +15,9 @@ from mezzanine.conf import settings
 from mezzanine.generic.models import ThreadedComment, Keyword
 from mezzanine.utils.views import paginate
 
-from drum.links.forms import LinkForm
-from drum.links.models import Link
-from drum.links.utils import order_by_score
+from .forms import LinkForm
+from .models import Link
+from .utils import order_by_score
 
 
 # Returns the name to be used for reverse profile lookups from the user
@@ -41,6 +41,7 @@ class UserFilterView(ListView):
         except KeyError:
             profile_user = None
         else:
+            a
             users = User.objects.select_related(USER_PROFILE_RELATED_NAME)
             lookup = {"username__iexact": username, "is_active": True}
             profile_user = get_object_or_404(users, **lookup)
