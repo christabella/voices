@@ -15,10 +15,7 @@
 
     {% with profile_user|get_profile as profile %}
     {% if profile.bio %}
-    <p class="bio">{{ profile.bio|urlize|linebreaks }}</p>
-    {% endif %}
-    {% if profile.website %}
-    <p class="bio">Website: {{ profile.website|urlize }}</p>
+    <p class="bio">{{ profile.description_of_yourself|urlize|linebreaks }}</p>
     {% endif %}
     {% endwith %}
 

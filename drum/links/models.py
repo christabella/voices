@@ -68,7 +68,7 @@ class Profile(models.Model):
 
     user = models.OneToOneField(USER_MODEL)
     # website = models.URLField(blank=True)
-    bio = models.TextField(blank=True)
+    description_of_yourself = models.TextField(blank=True)
     karma = models.IntegerField(default=0, editable=False)
 
     def __unicode__(self):
