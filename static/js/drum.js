@@ -9,9 +9,6 @@
 //         $('div').remove("#choiceModal");
 //      }
 //  });
-$(document).ready(function() {
-    $('div').remove("#choiceModal");
-});
 
 var contents = function(html, tag) {
     if (html.indexOf('<' + tag + '>') >= 0) {
