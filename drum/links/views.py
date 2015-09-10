@@ -19,7 +19,6 @@ from .forms import LinkForm
 from .models import Link
 from .utils import order_by_score
 
-
 # Returns the name to be used for reverse profile lookups from the user
 # object. That's "profile" for the ``drum.links.Profile``, but otherwise
 # depends on the model specified in ``AUTH_PROFILE_MODULE``.
@@ -41,7 +40,6 @@ class UserFilterView(ListView):
         except KeyError:
             profile_user = None
         else:
-            a
             users = User.objects.select_related(USER_PROFILE_RELATED_NAME)
             lookup = {"username__iexact": username, "is_active": True}
             profile_user = get_object_or_404(users, **lookup)
@@ -52,8 +50,8 @@ class UserFilterView(ListView):
             context[context_object_name] = context["object_list"]
 
         context["profile_user"] = profile_user
-        context["no_data"] = ("Whoa, there's like, literally no data here, "
-                              "like seriously, I totally got nothin.")
+        context["no_data"] = ("Nothing to be found."
+                              "Add something!")
         return context
 
 
