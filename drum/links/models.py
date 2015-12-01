@@ -63,6 +63,9 @@ class Link(Displayable, Ownable):
             for keyword in Keyword.objects.filter(lookup):
                 self.keywords.add(AssignedKeyword(keyword=keyword))
 
+    def __unicode__(self):
+        return "{}".format(self.title)
+
 
 class Profile(models.Model):
 
